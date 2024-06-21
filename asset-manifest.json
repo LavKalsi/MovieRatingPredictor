@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MovieRatingPredictor/static/css/main.0a967f8b.css",
+    "main.js": "/MovieRatingPredictor/static/js/main.0f0c9844.js",
+    "static/js/453.9218b45d.chunk.js": "/MovieRatingPredictor/static/js/453.9218b45d.chunk.js",
+    "index.html": "/MovieRatingPredictor/index.html",
+    "main.0a967f8b.css.map": "/MovieRatingPredictor/static/css/main.0a967f8b.css.map",
+    "main.0f0c9844.js.map": "/MovieRatingPredictor/static/js/main.0f0c9844.js.map",
+    "453.9218b45d.chunk.js.map": "/MovieRatingPredictor/static/js/453.9218b45d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a967f8b.css",
+    "static/js/main.0f0c9844.js"
+  ]
+}
