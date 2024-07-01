@@ -1,0 +1,25 @@
+Example data With the actual rating of the movie to check
+
+Movie 1 
+
+Year = 1958 
+Duration = 132 min 
+Genere = Crime, Drama, Mystery
+Votes = 72 
+Director = Pramod Chakravorty
+Actor1 = Guru Dutt
+Actor2 = Waheeda Rehman
+
+Rating should be = 8.9
+
+Movie 2
+
+Year = 2016 
+Duration = 120 min 
+Genere = Horror, Mystery
+Votes = 559 
+Director = Dharmendra Suresh Desai
+Actor1 = Sharman Joshi
+Actor2 = Meera Chopra
+
+Rating should be = 3.8S
