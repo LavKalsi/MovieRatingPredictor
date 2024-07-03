@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Movie Rating Predictor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React web application that predicts movie ratings based on various details about the movie using a Python machine learning model. Flask is used for communication between the Python backend and the React app.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Backend Details](#backend-details)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Movie Rating Predictor is a web application built with React for the frontend and a Python machine learning model for the backend. It predicts the rating of a movie (from 0 to 10) based on details such as duration, actors' names, and director's name.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User-friendly Interface:** Simple interface to input movie details and predict ratings.
+- **Real-time Predictions:** Quickly processes input to provide movie rating predictions.
+- **Machine Learning:** Utilizes a trained machine learning model for accurate predictions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- Python 3.x
+- pip (Python package installer)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/LavKalsi/MovieRatingPredictor.git
+    cd MovieRatingPredictor
+    ```
 
-### `npm run eject`
+2. Navigate to the `frontend` directory and install dependencies:
+    ```sh
+    cd frontend
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the React application:
+    ```sh
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Create and activate a virtual environment (optional but recommended):
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install the required Python packages:
+    ```sh
+    pip install -r res/requirements.txt
+    ```
 
-## Learn More
+3. Run the backend server:
+    ```sh
+    python res/Server.py
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Ensure both the frontend and backend servers are running.
+2. Open your browser and navigate to `http://localhost:3000`.
+3. Enter the movie details (such as duration, actors' names, and director's name).
+4. Click the "Predict" button to receive the rating prediction.
 
-### Code Splitting
+## How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The Movie Rating Predictor web app allows users to predict the rating of a movie. Here's how you can use it:
 
-### Analyzing the Bundle Size
+1. **Input Details:** Users can input movie details such as duration, actors' names, and director's name into the provided fields on the web app.
+2. **Submit for Prediction:** After entering the details, users click the "Predict" button to submit the information for analysis.
+3. **Backend Processing:** The frontend sends the movie details to the backend Python server, where the machine learning model processes them.
+4. **Receive Results:** The backend returns the prediction result (movie rating from 0 to 10) to the frontend, which is then displayed to the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Backend Details
 
-### Making a Progressive Web App
+The backend is a Python Flask application that serves a machine learning model trained to predict movie ratings. The backend files, including the model and Flask app, are located in the `res` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Files in `res` Folder
 
-### Advanced Configuration
+- `Server.py`: The Flask application that handles HTTP requests from the frontend.
+- `model.pkl`: The trained machine learning model.
+- `requirements.txt`: The dependencies required for the Python backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or suggestions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+LavKalsi - [GitHub](https://github.com/LavKalsi)
+
+Feel free to contact me if you have any questions or suggestions!
